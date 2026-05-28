@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog AfriTalent - Actualités, conseils et tendances du freelance tech en Afrique">
+    <title>AfriTalent — Blog | Actualités et conseils tech</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Fichier CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brightness-alt-high"></i>
+                AfriTalent
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Menu de navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="d-flex align-items-center gap-2 ms-lg-3">
+                    <a href="inscription.html" class="btn btn-cta">Rejoindre AfriTalent</a>
+                    <button id="darkModeToggle" class="btn btn-dark-mode" aria-label="Changer de thème">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ==================== HEADER ==================== -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Le <span class="gradient-text">blog</span> AfriTalent</h1>
+                <p class="page-description">
+                    Actualités, conseils et tendances du freelance tech en Afrique
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION BLOG ==================== -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="row g-5">
+                    
+                    <!-- ARTICLES PRINCIPAUX (colonne de gauche) -->
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            
+                            <!-- Article 1 -->
+                            <div class="col-md-6">
+                                <div class="article-card">
+                                    <div class="article-image">
+                                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop" 
+                                             alt="Freelance travaillant sur ordinateur" loading="lazy">
+                                        <span class="article-category">Conseils</span>
+                                    </div>
+                                    <div class="article-content">
+                                        <div class="article-meta">
+                                            <span><i class="bi bi-calendar"></i> 15 Mars 2026</span>
+                                            <span><i class="bi bi-clock"></i> 5 min de lecture</span>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="article-single.html">10 conseils pour réussir en tant que freelance tech en Afrique</a>
+                                        </h3>
+                                        <p class="article-excerpt">
+                                            Découvrez les stratégies gagnantes pour développer votre activité freelance sur le continent africain...
+                                        </p>
+                                        <a href="article-single.html" class="article-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Article 2 -->
+                            <div class="col-md-6">
+                                <div class="article-card">
+                                    <div class="article-image">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+                                             alt="Tendances tech 2026" loading="lazy">
+                                        <span class="article-category">Tendances</span>
+                                    </div>
+                                    <div class="article-content">
+                                        <div class="article-meta">
+                                            <span><i class="bi bi-calendar"></i> 10 Mars 2026</span>
+                                            <span><i class="bi bi-clock"></i> 8 min de lecture</span>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="article-single.html">Les tendances tech à suivre en 2026 en Afrique</a>
+                                        </h3>
+                                        <p class="article-excerpt">
+                                            IA, blockchain, fintech... Quelles sont les technologies qui vont façonner l'avenir du continent ?...
+                                        </p>
+                                        <a href="article-single.html" class="article-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Article 3 -->
+                            <div class="col-md-6">
+                                <div class="article-card">
+                                    <div class="article-image">
+                                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
+                                             alt="Équipe en réunion" loading="lazy">
+                                        <span class="article-category">Communauté</span>
+                                    </div>
+                                    <div class="article-content">
+                                        <div class="article-meta">
+                                            <span><i class="bi bi-calendar"></i> 5 Mars 2026</span>
+                                            <span><i class="bi bi-clock"></i> 4 min de lecture</span>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="article-single.html">Comment AfriTalent transforme le paysage du freelance en Afrique</a>
+                                        </h3>
+                                        <p class="article-excerpt">
+                                            Retour sur notre mission et l'impact que nous avons déjà sur la communauté des freelances africains...
+                                        </p>
+                                        <a href="article-single.html" class="article-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Article 4 -->
+                            <div class="col-md-6">
+                                <div class="article-card">
+                                    <div class="article-image">
+                                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop" 
+                                             alt="Développeur code" loading="lazy">
+                                        <span class="article-category">Développement</span>
+                                    </div>
+                                    <div class="article-content">
+                                        <div class="article-meta">
+                                            <span><i class="bi bi-calendar"></i> 28 Février 2026</span>
+                                            <span><i class="bi bi-clock"></i> 6 min de lecture</span>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="article-single.html">Les frameworks JavaScript les plus demandés en 2026</a>
+                                        </h3>
+                                        <p class="article-excerpt">
+                                            React, Vue, Angular ou Svelte ? Découvrez les technologies qui recrutent le plus cette année...
+                                        </p>
+                                        <a href="article-single.html" class="article-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Article 5 -->
+                            <div class="col-md-6">
+                                <div class="article-card">
+                                    <div class="article-image">
+                                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop" 
+                                             alt="Marketing digital" loading="lazy">
+                                        <span class="article-category">Marketing</span>
+                                    </div>
+                                    <div class="article-content">
+                                        <div class="article-meta">
+                                            <span><i class="bi bi-calendar"></i> 20 Février 2026</span>
+                                            <span><i class="bi bi-clock"></i> 5 min de lecture</span>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="article-single.html">Comment se faire connaître en tant que freelance digital</a>
+                                        </h3>
+                                        <p class="article-excerpt">
+                                            Stratégies de marketing digital pour booster votre visibilité et attirer plus de clients...
+                                        </p>
+                                        <a href="article-single.html" class="article-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Article 6 -->
+                            <div class="col-md-6">
+                                <div class="article-card">
+                                    <div class="article-image">
+                                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&h=400&fit=crop" 
+                                             alt="Design UI/UX" loading="lazy">
+                                        <span class="article-category">Design</span>
+                                    </div>
+                                    <div class="article-content">
+                                        <div class="article-meta">
+                                            <span><i class="bi bi-calendar"></i> 15 Février 2026</span>
+                                            <span><i class="bi bi-clock"></i> 4 min de lecture</span>
+                                        </div>
+                                        <h3 class="article-title">
+                                            <a href="article-single.html">UI/UX Design : les tendances qui marquent 2026</a>
+                                        </h3>
+                                        <p class="article-excerpt">
+                                            Minimalisme, bento grid, micro-interactions... Les nouvelles directions du design web...
+                                        </p>
+                                        <a href="article-single.html" class="article-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pagination -->
+                        <nav class="pagination-container">
+                            <ul class="pagination">
+                                <li><a href="#" class="page-link"><i class="bi bi-chevron-left"></i></a></li>
+                                <li><a href="#" class="page-link active">1</a></li>
+                                <li><a href="#" class="page-link">2</a></li>
+                                <li><a href="#" class="page-link">3</a></li>
+                                <li><a href="#" class="page-link"><i class="bi bi-chevron-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <!-- SIDEBAR (colonne de droite) -->
+                    <div class="col-lg-4">
+                        <div class="blog-sidebar">
+                            
+                            <!-- Widget Recherche -->
+                            <div class="sidebar-widget">
+                                <h3>Rechercher</h3>
+                                <form class="search-form">
+                                    <input type="text" class="search-input" placeholder="Rechercher un article...">
+                                    <button type="submit" class="search-btn">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            
+                            <!-- Widget Catégories -->
+                            <div class="sidebar-widget">
+                                <h3>Catégories</h3>
+                                <ul class="categories-list">
+                                    <li><a href="#">Conseils freelances</a><span class="category-count">12</span></li>
+                                    <li><a href="#">Tendances tech</a><span class="category-count">8</span></li>
+                                    <li><a href="#">Développement web</a><span class="category-count">15</span></li>
+                                    <li><a href="#">Design UI/UX</a><span class="category-count">6</span></li>
+                                    <li><a href="#">Marketing digital</a><span class="category-count">7</span></li>
+                                    <li><a href="#">Communauté</a><span class="category-count">5</span></li>
+                                    <li><a href="#">Data & IA</a><span class="category-count">4</span></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Widget Articles récents -->
+                            <div class="sidebar-widget">
+                                <h3>Articles récents</h3>
+                                
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=100&h=100&fit=crop" alt="Article récent">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h4><a href="#">10 conseils pour réussir en freelance tech</a></h4>
+                                        <div class="recent-post-date"><i class="bi bi-calendar"></i> 15 Mars 2026</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100&h=100&fit=crop" alt="Article récent">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h4><a href="#">Les tendances tech 2026 en Afrique</a></h4>
+                                        <div class="recent-post-date"><i class="bi bi-calendar"></i> 10 Mars 2026</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=100&h=100&fit=crop" alt="Article récent">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h4><a href="#">AfriTalent transforme le freelance en Afrique</a></h4>
+                                        <div class="recent-post-date"><i class="bi bi-calendar"></i> 5 Mars 2026</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Widget Newsletter -->
+                            <div class="sidebar-widget">
+                                <h3>Newsletter</h3>
+                                <p class="newsletter-text">Recevez nos derniers articles directement dans votre boîte mail.</p>
+                                <form class="newsletter-form">
+                                    <input type="email" class="newsletter-input" placeholder="Votre email">
+                                    <button type="submit" class="newsletter-btn">S'abonner</button>
+                                </form>
+                            </div>
+                            
+                            <!-- Widget Tags -->
+                            <div class="sidebar-widget">
+                                <h3>Tags populaires</h3>
+                                <div class="tags-cloud">
+                                    <a href="#" class="tag">Freelance</a>
+                                    <a href="#" class="tag">Tech</a>
+                                    <a href="#" class="tag">Afrique</a>
+                                    <a href="#" class="tag">Développement</a>
+                                    <a href="#" class="tag">Design</a>
+                                    <a href="#" class="tag">Marketing</a>
+                                    <a href="#" class="tag">IA</a>
+                                    <a href="#" class="tag">Data</a>
+                                    <a href="#" class="tag">Cloud</a>
+                                    <a href="#" class="tag">DevOps</a>
+                                    <a href="#" class="tag">UI/UX</a>
+                                    <a href="#" class="tag">React</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ==================== SECTION CTA ==================== -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2 class="cta-title">Vous avez aimé nos articles ?</h2>
+                <p class="cta-text">Rejoignez la communauté AfriTalent et recevez nos prochains articles en avant-première.</p>
+                <a href="inscription.html" class="btn btn-cta-large">
+                    S'inscrire gratuitement <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <i class="bi bi-brightness-alt-high"></i> AfriTalent
+                    </div>
+                    <p class="footer-description">
+                        La première plateforme de mise en relation entre talents tech africains et entreprises innovantes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Liens utiles</h5>
+                    <ul class="footer-links">
+                        <li><a href="freelances.html">Freelances</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Ressources</h5>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Guide freelances</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-envelope"></i> contact@afritalent.com</li>
+                        <li><i class="bi bi-telephone"></i> +221 78 123 45 67</li>
+                        <li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> AfriTalent. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Script spécifique blog -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation de recherche (simple effet)
+            const searchForm = document.querySelector('.search-form');
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const searchInput = this.querySelector('.search-input');
+                    if (searchInput.value.trim()) {
+                        alert(`🔍 Recherche : "${searchInput.value}"\n\nCette fonctionnalité sera bientôt disponible.`);
+                    }
+                });
+            }
+            
+            // Newsletter
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const emailInput = this.querySelector('.newsletter-input');
+                    if (emailInput.value.trim()) {
+                        alert(`📧 Inscription à la newsletter confirmée pour : ${emailInput.value}\n\nMerci !`);
+                        emailInput.value = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

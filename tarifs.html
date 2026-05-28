@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos plans tarifaires AfriTalent - Solution gratuite, Pro et Entreprise pour tous vos besoins">
+    <title>AfriTalent — Tarifs | Plans adaptés à vos besoins</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Fichier CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brightness-alt-high"></i>
+                AfriTalent
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Menu de navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="d-flex align-items-center gap-2 ms-lg-3">
+                    <a href="inscription.html" class="btn btn-cta">Rejoindre AfriTalent</a>
+                    <button id="darkModeToggle" class="btn btn-dark-mode" aria-label="Changer de thème">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ==================== HEADER ==================== -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Des tarifs <span class="gradient-text">adaptés</span> à vos besoins</h1>
+                <p class="page-description">
+                    Choisissez le plan qui vous correspond. Tous nos plans incluent un support prioritaire.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== PLANS TARIFAIRES ==================== -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    
+                    <!-- Plan GRATUIT -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card">
+                            <h3 class="pricing-name">Gratuit</h3>
+                            <div class="pricing-price">
+                                0€ <small>/mois</small>
+                            </div>
+                            <p class="pricing-description">Idéal pour démarrer et explorer la plateforme</p>
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-lg"></i> Accès au catalogue freelances</li>
+                                <li><i class="bi bi-check-lg"></i> Publication de 1 mission/mois</li>
+                                <li><i class="bi bi-check-lg"></i> Support par email</li>
+                                <li><i class="bi bi-x-lg"></i> Frais de service : 15%</li>
+                                <li><i class="bi bi-x-lg"></i> Statistiques avancées</li>
+                                <li><i class="bi bi-x-lg"></i> API accessible</li>
+                            </ul>
+                            <button class="btn-pricing-outline" onclick="showTarifAlert('Gratuit')">
+                                Commencer gratuitement
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Plan PRO (Recommandé) -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">🔥 Populaire</div>
+                            <h3 class="pricing-name">Pro</h3>
+                            <div class="pricing-price">
+                                29€ <small>/mois</small>
+                            </div>
+                            <p class="pricing-description">Pour les recruteurs réguliers et les agences</p>
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-lg"></i> Tout du plan Gratuit</li>
+                                <li><i class="bi bi-check-lg"></i> Missions illimitées</li>
+                                <li><i class="bi bi-check-lg"></i> Frais de service : 8% seulement</li>
+                                <li><i class="bi bi-check-lg"></i> Statistiques avancées</li>
+                                <li><i class="bi bi-check-lg"></i> Support prioritaire 24/7</li>
+                                <li><i class="bi bi-x-lg"></i> API accessible</li>
+                            </ul>
+                            <button class="btn-pricing" onclick="showTarifAlert('Pro')">
+                                Choisir Pro
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Plan ENTREPRISE -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card">
+                            <h3 class="pricing-name">Entreprise</h3>
+                            <div class="pricing-price">
+                                99€ <small>/mois</small>
+                            </div>
+                            <p class="pricing-description">Pour les grandes structures et besoins spécifiques</p>
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-lg"></i> Tout du plan Pro</li>
+                                <li><i class="bi bi-check-lg"></i> Frais de service : 5%</li>
+                                <li><i class="bi bi-check-lg"></i> API complète</li>
+                                <li><i class="bi bi-check-lg"></i> Comptes multi-utilisateurs</li>
+                                <li><i class="bi bi-check-lg"></i> Support dédié</li>
+                                <li><i class="bi bi-check-lg"></i> Formation incluse</li>
+                            </ul>
+                            <button class="btn-pricing-outline" onclick="showTarifAlert('Entreprise')">
+                                Contacter les ventes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FAQ ACCORDION ==================== -->
+        <section class="faq-section section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-badge">Questions fréquentes</span>
+                    <h2 class="section-title">FAQ</h2>
+                    <p class="section-subtitle">Tout ce que vous devez savoir sur nos tarifs</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            
+                            <!-- Question 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        💰 Puis-je changer de plan à tout moment ?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Oui, vous pouvez passer d'un plan à un autre à tout moment. La modification est immédiate et vous êtes facturé au prorata du mois en cours.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        🔒 Y a-t-il un engagement de durée ?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Aucun engagement ! Nos plans sont sans durée minimale. Vous pouvez résilier à tout moment depuis votre espace client.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        💳 Quels moyens de paiement sont acceptés ?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Nous acceptons les cartes bancaires (Visa, Mastercard), PayPal, et virement bancaire pour les plans Entreprise.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        🎓 Y a-t-il des réductions pour les étudiants ou associations ?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Oui ! Nous offrons une réduction de 50% sur le plan Pro pour les étudiants et associations à but non lucratif. Contactez notre support pour en bénéficier.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        🔧 Comment fonctionne le support ?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Le support par email est inclus dans tous les plans. Les plans Pro et Entreprise bénéficient d'un support prioritaire 24/7 par chat et téléphone.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <i class="bi bi-brightness-alt-high"></i> AfriTalent
+                    </div>
+                    <p class="footer-description">
+                        La première plateforme de mise en relation entre talents tech africains et entreprises innovantes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Liens utiles</h5>
+                    <ul class="footer-links">
+                        <li><a href="freelances.html">Freelances</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Ressources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guide freelances</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-envelope"></i> contact@afritalent.com</li>
+                        <li><i class="bi bi-telephone"></i> +221 78 123 45 67</li>
+                        <li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> AfriTalent. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        function showTarifAlert(plan) {
+            alert(`🚀 Vous avez sélectionné le plan ${plan}\n\nCette fonctionnalité sera disponible prochainement.`);
+        }
+    </script>
+</body>
+</html>
