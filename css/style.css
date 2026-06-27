@@ -1,6 +1,6 @@
 /* ================================================================
    AFRI TALENT - STYLES PROFESSIONNELS COMPLETS
-   Version conforme au cahier des charges
+   Version 3.0 - Conforme au cahier des charges
    ================================================================
    
    Pages couvertes :
@@ -10,7 +10,7 @@
    - about.html
    - blog.html
    - contact.html
-   - inscription.html (extension personnelle)
+   - inscription.html
    
    Table des matières :
    1. Variables CSS (6+)
@@ -37,7 +37,7 @@
    
    ================================================================ */
 
-/* ================= 1. VARIABLES CSS ================= */
+/* ================= 1. VARIABLES CSS (6+ variables) ================= */
 :root {
     --primary: #0d6efd;
     --primary-dark: #0a58ca;
@@ -176,17 +176,14 @@ img {
 .navbar {
     padding: 1rem 0;
     transition: all var(--transition-normal);
-    background-color: transparent;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
 }
 
 .navbar.scrolled {
-    background-color: var(--white);
+    background: var(--white);
     box-shadow: var(--shadow-md);
     padding: 0.5rem 0;
-}
-
-body.dark-mode .navbar.scrolled {
-    background-color: #1a1a2e;
 }
 
 .navbar-brand {
@@ -198,6 +195,7 @@ body.dark-mode .navbar.scrolled {
 
 .navbar-brand i {
     margin-right: 8px;
+    color: var(--primary);
 }
 
 .nav-link {
@@ -226,6 +224,43 @@ body.dark-mode .navbar.scrolled {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     color: white;
+}
+
+.btn-dark-mode {
+    background: var(--gray-200);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    color: var(--gray-800);
+}
+
+.btn-dark-mode:hover {
+    transform: scale(1.05);
+    background: var(--gray-300);
+}
+
+.btn-dark-mode i {
+    font-size: 1.2rem;
+}
+
+/* Style pour le menu hamburger sur mobile */
+.navbar-toggler {
+    border-color: var(--gray-400);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 37, 41, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
 }
 
 /* ================= 4. SECTION HERO ================= */
@@ -319,7 +354,7 @@ body.dark-mode .hero-section {
     transform: translateY(-2px);
 }
 
-/* Illustration flottante (placeholders) */
+/* Illustration flottante */
 .hero-illustration {
     position: relative;
     height: 400px;
@@ -685,6 +720,88 @@ body.dark-mode .btn-outline-primary {
 }
 
 body.dark-mode .btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+body.dark-mode .contact-info-card {
+    background: #1e1e2e;
+}
+
+body.dark-mode .contact-form {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .inscription-form-wrapper {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .user-type-selector {
+    background: #2a2a3e;
+}
+
+body.dark-mode .separator span {
+    background: #1e1e2e;
+}
+
+body.dark-mode .btn-social {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+    color: var(--gray-300);
+}
+
+body.dark-mode .sidebar-widget {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .article-card {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .article-title a {
+    color: var(--gray-300);
+}
+
+body.dark-mode .pricing-card {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .team-card {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .filter-btn {
+    border-color: var(--gray-700);
+    color: var(--gray-300);
+}
+
+body.dark-mode .filter-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+body.dark-mode .faq-section {
+    background: #1a1a2e;
+}
+
+body.dark-mode .accordion-item,
+body.dark-mode .accordion-button,
+body.dark-mode .accordion-body {
+    background: #1e1e2e;
+    border-color: #3a3a4e;
+}
+
+body.dark-mode .accordion-button {
+    color: var(--gray-300);
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
     background: var(--primary);
     color: white;
 }
@@ -1304,6 +1421,10 @@ body.dark-mode .filters-section {
     color: white;
 }
 
+.key-numbers-section .stat-label {
+    color: rgba(255,255,255,0.9);
+}
+
 /* ================= 18. PAGE BLOG ================= */
 .blog-section {
     padding: var(--spacing-xl) 0;
@@ -1648,6 +1769,7 @@ body.dark-mode .filters-section {
     background: var(--white);
     transition: all var(--transition-fast);
     font-family: var(--font-body);
+    color: var(--gray-800);
 }
 
 .form-control-custom:focus,
@@ -1655,6 +1777,16 @@ body.dark-mode .filters-section {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.form-control-custom.error,
+.form-select-custom.error {
+    border-color: var(--danger);
+}
+
+.form-control-custom.success,
+.form-select-custom.success {
+    border-color: var(--success);
 }
 
 .error-message {
@@ -1787,11 +1919,6 @@ body.dark-mode .filters-section {
     border: 1px solid var(--gray-200);
 }
 
-body.dark-mode .inscription-form-wrapper {
-    background: #1e1e2e;
-    border-color: #3a3a4e;
-}
-
 .form-header {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -1813,10 +1940,6 @@ body.dark-mode .inscription-form-wrapper {
     background: var(--gray-100);
     padding: 0.5rem;
     border-radius: 60px;
-}
-
-body.dark-mode .user-type-selector {
-    background: #2a2a3e;
 }
 
 .type-option {
@@ -1898,10 +2021,6 @@ body.dark-mode .user-type-selector {
     font-size: 0.85rem;
 }
 
-body.dark-mode .separator span {
-    background: #1e1e2e;
-}
-
 .social-login {
     display: flex;
     gap: 1rem;
@@ -1932,12 +2051,6 @@ body.dark-mode .separator span {
 .btn-social.github i { color: #333; }
 .btn-social.linkedin i { color: #0077B5; }
 
-body.dark-mode .btn-social {
-    background: #1e1e2e;
-    border-color: #3a3a4e;
-    color: var(--gray-300);
-}
-
 .login-redirect {
     text-align: center;
     margin-top: 1.5rem;
@@ -1950,7 +2063,7 @@ body.dark-mode .btn-social {
     font-weight: 600;
 }
 
-/* ================= 21. PLACEHOLDERS (profils vides) ================= */
+/* ================= 21. PLACEHOLDERS ================= */
 .placeholder-img {
     background: linear-gradient(135deg, var(--gray-300) 0%, var(--gray-400) 100%);
     display: flex;
