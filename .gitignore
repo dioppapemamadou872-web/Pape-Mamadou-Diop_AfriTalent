@@ -1,3 +1,162 @@
-.DS_Store 
-Thumbs.db 
+# ================================================================
+# .gitignore - AfriTalent Projet
+# Auteur : Pape Mamadou Diop
+# Projet : AfriTalent - Plateforme de freelances tech en Afrique
+# ================================================================
+
+# ==================== Systèmes d'exploitation ====================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*.swp
+*.swo
+*~
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ==================== IDE et éditeurs ====================
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+*.log
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+*.atom
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Emacs
+*.swp
+*.swo
+*.swn
+*~
+\#*
+.\#*
+
+# ==================== Dépendances ====================
+
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+.pnpm-store/
+
+# ==================== Fichiers temporaires ====================
+
+# Fichiers de sauvegarde
+*.bak
+*.old
+*.orig
+*.rej
+*.tmp
+*.temp
+
+# Fichiers de log
+*.log
+logs/
+*.log
+
+# Fichiers de cache
+*.cache
+*.tscache
+
+# ==================== Fichiers d'environnement ====================
+
+.env
+.env.local
+.env.*.local
+*.env
+*.env.local
+
+# ==================== Build / Distribution ====================
+
+dist/
+build/
+out/
+target/
+bin/
+*.min.js
+*.min.css
+
+# ==================== Images ====================
+
+# Exclusion des images du dépôt (car vous avez demandé de les exclure)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.webp
+*.ico
+*.bmp
+*.tiff
+
+# Dossier images (exclu)
+images/
+
+# ==================== Documents ====================
+
+# Exclusion des documents temporaires
+*.tmp
+*.temp
+
+# Attention : Le PowerPoint doit être conservé dans le dépôt
+# Ne pas exclure docs/*.pptx
+# !docs/*.pptx
+
+# ==================== Fichiers spécifiques au projet ====================
+
+.DS_Store
+*.log
+*.tmp
+*.cache
+
+# Fichiers de configuration locaux
+*.local
+*.user
+
+# ==================== Dossiers optionnels ====================
+
+# Dossier de documentation (optionnel - décommenter pour exclure)
+# docs/
+
+# Dossier de captures d'écran (optionnel - décommenter pour exclure)
+# screenshots/
+
+# Dossier de téléchargement (optionnel - décommenter pour exclure)
+# downloads/
